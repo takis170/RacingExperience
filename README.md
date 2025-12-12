@@ -11,7 +11,7 @@ This project was created for my high school web development course using **HTML*
 
 ## Process
 - Documented my iterative development process (PDF included)  
-- Conducted UX testing with 5 users (PDF included with results)  
+- Conducted UX testing with 5 users (GEorgesof Phase 10A & 10B_ UX Testing + UI Iteration (SuperFan))  
 - Made improvements based on user feedback
 
 ## How to Run
@@ -21,3 +21,4 @@ Just open `index.html` in any browser.
 - Add more interactivity  
 - Improve animations and performance  
 - Expand page content
+
