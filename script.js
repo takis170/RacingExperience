@@ -28,6 +28,8 @@ Porsche.addEventListener("click", function () {
   document.body.style.background = "#bec3bb";
   infoContainer.style.display = "none";
   teamContainer.style.display = "flex";
+  middle.style.height = "50vh";
+  iframe.style.height = "50vh";
   PorscheTeams();
 });
 Bmw.addEventListener("click", function () {
@@ -36,6 +38,8 @@ Bmw.addEventListener("click", function () {
   document.body.style.background = "#bec3bb";
   infoContainer.style.display = "none";
   teamContainer.style.display = "flex";
+  middle.style.height = "50vh";
+  iframe.style.height = "50vh";
   BmwTeams();
 });
 button1.addEventListener("click", () => {
@@ -180,3 +184,4 @@ slot2.addEventListener("click", () => {
     console.log("Please click a brand first!");
   }
 });
+
