@@ -76,7 +76,7 @@ function Reset() {
   infoContainer.style.display = "none";
   teamContainer.style.display = "none";
   iframe.src =
-    "https://www.youtube.com/embed/4kywZpZD5lo?autoplay=1&mute=1&loop=1&playlist=4kywZpZD5lo&controls=0&modestbranding=1&rel=0";
+    "https://www.youtube.com/embed/WHXXWVhQp7M?autoplay=1&mute=1&loop=1&playlist=WHXXWVhQp7M";
 }
 
 // Brand state
@@ -184,4 +184,5 @@ slot2.addEventListener("click", () => {
     console.log("Please click a brand first!");
   }
 });
+
 
