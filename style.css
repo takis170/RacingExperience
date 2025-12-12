@@ -1,0 +1,316 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #bec3bb;
+}
+
+.navbar {
+  display: flex;
+  height: 5vh;
+  width: 100%;
+  background-color: rgb(36, 35, 35);
+}
+
+.middle {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Driverinfo {
+  width: 100%;
+  height: 25vh;
+  background: ;
+  display: none;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(100px);
+}
+
+.factsbox {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black; /* full border */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  text-align: center;
+}
+.factsbox img {
+  object-fit: contain;
+}
+iframe {
+  box-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.55);
+  width: auto; /* width relative to viewport width */
+  height: 80vh; /* height auto-adjusts */
+  aspect-ratio: 16 / 9; /* keeps 16:9 ratio */
+  max-width: 100%; /* prevent overflow */
+  display: flex; /* remove inline default spacing */
+  margin: 0 auto; /* center horizontally */
+  z-index: -1;
+}
+ion-icon {
+  color: white;
+}
+.navbuffer {
+  display: flex;
+  height: 100%;
+  width: calc(100% / 7);
+}
+.icon {
+  display: flex;
+  height: 100%;
+  width: calc(100% / 7);
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.centerpls {
+  align-items: center;
+  padding: 0 20px 0;
+}
+.home {
+  display: flex;
+  height: 100%;
+  width: calc(100% / 7);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24pt;
+}
+.burger {
+  width: calc(100% / 2);
+  justify-content: center;
+  align-items: center;
+  font-size: 24pt;
+}
+h2 {
+  display: flex;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+h3 {
+  display: flex;
+}
+img {
+  width: 120px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.menu button {
+  display: none;
+  flex-direction: column;
+  height: calc(30vh / 3);
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  border: none;
+}
+.menu h3 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.burger:hover .menu button {
+  display: flex;
+}
+button:hover {
+  background-color: #bec3bb;
+}
+.team {
+  width: clamp(200px, 25vw, 400px);
+  height: 100%;
+  margin-right: 1%;
+  background-color: ;
+}
+.team img {
+  object-fit: cover;
+}
+.team img:hover {
+  transform: scale(1.2);
+  transition: transform 0.35s;
+  width: ;
+  height: ;
+}
+.teamContainer {
+  height: 20%;
+  display: none;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+/* PHONE */
+@media (max-width: 600px) {
+  .team {
+    overflow: hidden;
+  }
+
+  .infoContainer {
+    flex-direction: column;
+    height: 45vh;
+  }
+
+  .factsbox {
+    width: 100%;
+    height: 100%;
+    border-right: none;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column; /* column layout */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+  }
+
+  .factsbox img {
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .middle {
+    height: 50vh;
+  }
+
+  .icon,
+  .navbuffer {
+    display: none;
+  }
+
+  .home {
+    width: calc(100% / 2);
+    justify-content: space-around;
+  }
+
+  .burger {
+    justify-content: space-around;
+    text-align: center;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  iframe {
+    height: 50vh;
+  }
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 900px) {
+  .infoContainer {
+    height: 40vh;
+    flex-direction: column;
+  }
+
+  .factsbox {
+    width: 100%;
+    height: 33.3%;
+    border-bottom: 1px solid black;
+    flex-direction: column;
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    box-sizing: border-box;
+  }
+
+  .factsbox img {
+    max-width: 80%; /* prevents oversized images */
+    max-height: 60%; /* FITS inside box NO MATTER WHAT */
+    object-fit: contain; /* scales down but never crops */
+  }
+
+  .factsbox h2 {
+    font-size: 20px; /* slightly smaller text for fit */
+    margin: 5px 0 0 0; /* reduce spacing */
+  }
+
+  .middle {
+    height: 50vh;
+  }
+
+  .navbuffer {
+    display: none;
+  }
+
+  .icon {
+    width: calc(100% / 4);
+  }
+
+  .burger {
+    display: none;
+  }
+  iframe {
+    height: 50vh;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .infoContainer {
+    height: 45vh;
+    flex-direction: column;
+    overflow: hidden; /* prevents container spill */
+  }
+
+  .factsbox {
+    width: 100%;
+    height: 100%;
+    border-right: none;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    padding: 5px; /* small padding so text never touches edges */
+  }
+
+  .factsbox img {
+    max-width: 80%; /* prevents oversized images */
+    max-height: 60%; /* FITS inside box NO MATTER WHAT */
+  }
+
+  .factsbox h2 {
+    font-size: 20px; /* slightly smaller text for fit */
+    margin: 5px 0 0 0; /* reduce spacing */
+    overflow: hidden; /* prevents text overflow */
+  }
+  .middle {
+    height: 50vh;
+  }
+
+  .navbuffer {
+    display: none;
+  }
+
+  .icon {
+    width: calc(100% / 4);
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 901px) {
+  .factsbox {
+    width: calc(100% / 3);
+  }
+
+  .burger {
+    display: none;
+  }
+}
