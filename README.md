@@ -10,7 +10,7 @@ This project was created for my high school web development course using **HTML*
 - Clean, simple UI/UX design
 
 ## Process
-- Documented my iterative development process (PDF included)  
+- Documented my iterative development process (George Turner - SuperFan Iterative Process Slides)  
 - Conducted UX testing with 5 users (GEorgesof Phase 10A & 10B_ UX Testing + UI Iteration (SuperFan))  
 - Made improvements based on user feedback
 
